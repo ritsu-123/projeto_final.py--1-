@@ -21,7 +21,8 @@ def main():
             lib.listar_livros('projeto_final.py/livros.csv')
         elif escolha == '2':
             titulo = input("Título: ")
-            lib.adicionar_livro('projeto_final.py/livros.csv', titulo)
+            quantidade = int(input("Quantidade: "))
+            lib.adicionar_livro('projeto_final.py/livros.csv', titulo, quantidade)
             print("Livro adicionado com sucesso!")
         elif escolha == '3':
             titulo = input("Título do livro que deseja buscar: ")
